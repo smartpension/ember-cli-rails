@@ -53,7 +53,7 @@ module EmberCli
   end
 
   def root
-    @root ||= Rails.root.join("tmp", "ember-cli").tap(&:mkpath)
+    @root ||= Rails.root.join("public", "assets").tap(&:mkpath)
   end
 
   def env
